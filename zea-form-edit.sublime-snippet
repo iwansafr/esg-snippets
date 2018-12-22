@@ -1,9 +1,15 @@
 <snippet>
 	<content><![CDATA[
-<?php defined('BASEPATH') OR exit('No direct script access allowed');
+\$${1:form} = new zea();
+\$${1:form}->init('edit');
+\$${1:form}->setTable('${2:table_name}');
+
+\$${1:form}->addInput('${3:title}','${3:type}');
+
+\$${1:form}->form();
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>_ci</tabTrigger>
+	<tabTrigger>zea-f-edit</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.php</scope>
 </snippet>
